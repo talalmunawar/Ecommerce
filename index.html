@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <title>E-commerce</title>
+  </head>
+  <body>
+
+    <header>
+      <nav class="flex items-center justify-between px-6 md:px-12 py-4 bg-[#111828]">
+        
+        <div class="flex items-center">
+          <a href="index.html"><img src="../assets/images/logot.png" width="40" height="40" alt="logo"></a>
+          <a href="index.html"><h1 class="text-white pl-3 text-xl sm:text-2xl font-semibold">E-commerce</h1></a>
+        </div>
+    
+        <div class="hidden lg:flex space-x-8">
+          <a href="index.html" class="text-white text-lg hover:text-blue-400">Home</a>
+          <a href="./pages/about.html" class="text-white text-lg hover:text-blue-400">About</a>
+          <a href="./pages/contact.html" class="text-white text-lg hover:text-blue-400">Contact</a>
+        </div>
+    
+        <div class="flex items-center space-x-4 sm:space-x-5">
+          <div class="hidden lg:flex space-x-4">
+            <a href="#"><img src="../assets/images/wishlist.png" width="38" height="28" alt="wishlist"></a>
+            <a href="#"><img src="../assets/images/cart.png" width="38" height="28" alt="cart"></a>
+          </div>
+    
+          <button class="bg-[#1447e6] text-white text-sm sm:text-[16px] py-2 px-3 sm:px-4 rounded-md hover:bg-blue-700 whitespace-nowrap">
+            <a href="./pages/login.html">Admin Dashboard</a>
+          </button></a>
+    
+          <button class="block lg:hidden text-white text-3xl focus:outline-none">
+            <a href="#">☰</a>
+          </button>
+        </div>
+      </nav>
+    </header>
+    
+    
+    
+
+    <section class="max-w-[1560px] mx-auto px-4 py-12">
+      <h2 class="text-3xl font-bold text-center mb-6">Our Products</h2>
+  
+      <div class="flex justify-center mb-8">
+        <input type="text" placeholder="Search products..."
+               class="border rounded-md px-4 py-2 w-full max-w-md focus:outline-none focus:ring-2 focus:ring-blue-400">
+      </div>
+      <div class="flex flex-wrap justify-center gap-6 mb-10">
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-md"><a href="#">All</a></button>
+        <button class="bg-gray-200 px-4 py-2 rounded-md"><a href="#">Electronics</a></button>
+        <button class="bg-gray-200 px-4 py-2 rounded-md"><a href="#">Clothing</a>Clothing</button>
+        <button class="bg-gray-200 px-4 py-2 rounded-md"><a href="#">Home & Furniture</a></button>
+        <button class="bg-gray-200 px-4 py-2 rounded-md"><a href="#">Beauty & Personal Care</a></button>
+        <button class="bg-gray-200 px-4 py-2 rounded-md"><a href="#">Toys & Games</a></button>
+        <button class="bg-gray-200 px-4 py-2 rounded-md"><a href="#">Sports & Outdoors</a></button>
+      </div>
+
+      <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+
+        <div class="bg-white rounded-xl p-4 flex flex-col items-center text-center shadow-lg">
+          <img src="../assets/images/product.jpg" alt="Product" class="w-40 h-40 object-contain mb-4">
+          <h3 class="font-semibold text-lg">Fjallraven - Foldsac</h3>
+          <p class="text-blue-600 font-bold mt-1">$109.95</p>
+          <p class="text-sm mt-2 text-gray-600">Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in t</p>
+          <button class="mt-4 bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Cart</button>
+          <button class="mt-2 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Wishlist</button>
+        </div>
+  
+        <div class="bg-white shadow-lg rounded-xl p-4 flex flex-col items-center text-center">
+          <img src="../assets/images/product.jpg" alt="Product" class="w-40 h-40 object-contain mb-4">
+          <h3 class="font-semibold text-lg">Mens Casual Premium</h3>
+          <p class="text-blue-600 font-bold mt-1">$22.3</p>
+          <p class="text-sm mt-2 text-gray-600">Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fa</p>
+          <button class="mt-4 bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Cart</button>
+          <button class="mt-2 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Wishlist</button>
+        </div>
+  
+        <div class="bg-white shadow-lg rounded-xl p-4 flex flex-col items-center text-center ">
+          <img src="../assets/images/product.jpg" alt="Product" class="w-40 h-40 object-contain mb-4">
+          <h3 class="font-semibold text-lg">Mens Cotton Jacket</h3>
+          <p class="text-blue-600 font-bold mt-1">$55.99</p>
+          <p class="text-sm mt-2 text-gray-600">Great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions such as working, hiki</p>
+          <button class="mt-4 bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Cart</button>
+          <button class="mt-2 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Wishlist</button>
+        </div>
+  
+        <div class="bg-white shadow-lg rounded-xl p-4 flex flex-col items-center text-center ">
+          <img src="../assets/images/product.jpg" alt="Product" class="w-40 h-40 object-contain mb-4">
+          <h3 class="font-semibold text-lg">Mens Casual Slim Fit</h3>
+          <p class="text-blue-600 font-bold mt-1">$15.99</p>
+          <p class="text-sm mt-2 text-gray-600">The color could be slightly different between on the screen and in practice. send me others</p>
+          <button class="mt-4 bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Cart</button>
+          <button class="mt-2 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Wishlist</button>
+        </div>
+  
+        <div class="bg-white shadow-lg rounded-xl p-4 flex flex-col items-center text-center">
+          <img src="../assets/images/product.jpg" alt="Product" class="w-40 h-40 object-contain mb-4">
+          <h3 class="font-semibold text-lg">John Hardy Women's L</h3>
+          <p class="text-blue-600 font-bold mt-1">$695</p>
+          <p class="text-sm mt-2 text-gray-600">From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the oc</p>
+          <button class="mt-4 bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Cart</button>
+          <button class="mt-2 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Wishlist</button>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-4 flex flex-col items-center text-center">
+          <img src="../assets/images/product.jpg" alt="Product" class="w-40 h-40 object-contain mb-4">
+          <h3 class="font-semibold text-lg">John Hardy Women's L</h3>
+          <p class="text-blue-600 font-bold mt-1">$695</p>
+          <p class="text-sm mt-2 text-gray-600">From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the oc</p>
+          <button class="mt-4 bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Cart</button>
+          <button class="mt-2 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Wishlist</button>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-4 flex flex-col items-center text-center">
+          <img src="../assets/images/product.jpg" alt="Product" class="w-40 h-40 object-contain mb-4">
+          <h3 class="font-semibold text-lg">John Hardy Women's L</h3>
+          <p class="text-blue-600 font-bold mt-1">$695</p>
+          <p class="text-sm mt-2 text-gray-600">From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the oc</p>
+          <button class="mt-4 bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Cart</button>
+          <button class="mt-2 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Wishlist</button>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-4 flex flex-col items-center text-center">
+          <img src="../assets/images/product.jpg" alt="Product" class="w-40 h-40 object-contain mb-4">
+          <h3 class="font-semibold text-lg">John Hardy Women's L</h3>
+          <p class="text-blue-600 font-bold mt-1">$695</p>
+          <p class="text-sm mt-2 text-gray-600">From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the oc</p>
+          <button class="mt-4 bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Cart</button>
+          <button class="mt-2 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Wishlist</button>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-4 flex flex-col items-center text-center">
+          <img src="../assets/images/product.jpg" alt="Product" class="w-40 h-40 object-contain mb-4">
+          <h3 class="font-semibold text-lg">John Hardy Women's L</h3>
+          <p class="text-blue-600 font-bold mt-1">$695</p>
+          <p class="text-sm mt-2 text-gray-600">From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the oc</p>
+          <button class="mt-4 bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Cart</button>
+          <button class="mt-2 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Wishlist</button>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-xl p-4 flex flex-col items-center text-center">
+          <img src="../assets/images/product.jpg" alt="Product" class="w-40 h-40 object-contain mb-4">
+          <h3 class="font-semibold text-lg">John Hardy Women's L</h3>
+          <p class="text-blue-600 font-bold mt-1">$695</p>
+          <p class="text-sm mt-2 text-gray-600">From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the oc</p>
+          <button class="mt-4 bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Cart</button>
+          <button class="mt-2 bg-red-500 hover:bg-red-600 text-white font-medium py-2 px-6 rounded-md w-full">Add to Wishlist</button>
+        </div>
+
+      
+      </div>
+      </section>
+
+      <footer class="bg-[#0f172a] text-gray-300 py-10">
+        <div class="max-w-[1280px] mx-auto px-6 md:px-10">
+          <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            
+            <!-- Brand Section -->
+            <div>
+              <h2 class="text-2xl font-semibold text-white mb-3">E-Commerce</h2>
+              <p class="text-sm leading-6">
+                Your one-stop shop for the latest trends in fashion, electronics, and lifestyle.
+                Shop smart. Shop easy.
+              </p>
+            </div>
+      
+            <!-- Quick Links -->
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-3">Quick Links</h3>
+              <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:text-white">Home</a></li>
+                <li><a href="#" class="hover:text-white">About</a></li>
+                <li><a href="#" class="hover:text-white">Contact</a></li>
+                <li><a href="#" class="hover:text-white">Dashboard</a></li>
+              </ul>
+            </div>
+      
+            <!-- Customer Service -->
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-3">Customer Service</h3>
+              <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                <li><a href="#" class="hover:text-white">Terms & Conditions</a></li>
+                <li><a href="#" class="hover:text-white">Help & Support</a></li>
+              </ul>
+            </div>
+      
+            <!-- Contact Us -->
+            <div>
+              <h3 class="text-lg font-semibold text-white mb-3">Contact Us</h3>
+              <ul class="space-y-2 text-sm">
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-location-dot text-[#2563eb]"></i> Lahore, Pakistan
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-envelope text-[#2563eb]"></i> support@gmail.com
+                </li>
+                <li class="flex items-center gap-2">
+                  <i class="fa-solid fa-phone text-[#2563eb]"></i> +92 312 3456789
+                </li>
+              </ul>
+      
+              <div class="flex gap-4 mt-4 text-xl">
+                <a href="#" class="hover:text-white"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-white"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-white"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-white"><i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Divider -->
+          <div class="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
+            © 2025 E-Commerce. All rights reserved.
+          </div>
+        </div>
+      </footer>
+      
+      
+  </body>
+</html>
